@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B53E36BA1B955494008E3E83 /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = B53E36B91B955494008E3E83 /* BlogPost.m */; };
 		B54EEDDC1B8D347E00E9D662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B54EEDDB1B8D347E00E9D662 /* main.m */; };
 		B54EEDDF1B8D347E00E9D662 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B54EEDDE1B8D347E00E9D662 /* AppDelegate.m */; };
 		B54EEDF61B8D347E00E9D662 /* C_Blog_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54EEDF51B8D347E00E9D662 /* C_Blog_ReaderTests.m */; };
@@ -25,6 +26,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B53E36B81B955494008E3E83 /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		B53E36B91B955494008E3E83 /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
 		B54EEDD61B8D347E00E9D662 /* C Blog Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C Blog Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54EEDDA1B8D347E00E9D662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54EEDDB1B8D347E00E9D662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -81,6 +84,8 @@
 				B54EEDDE1B8D347E00E9D662 /* AppDelegate.m */,
 				B54EEE011B8D38F600E9D662 /* TableViewController.h */,
 				B54EEE021B8D38F600E9D662 /* TableViewController.m */,
+				B53E36B81B955494008E3E83 /* BlogPost.h */,
+				B53E36B91B955494008E3E83 /* BlogPost.m */,
 				B54EEDFF1B8D365200E9D662 /* MainStoryboard.storyboard */,
 				B54EEDD91B8D347E00E9D662 /* Supporting Files */,
 			);
@@ -215,6 +220,7 @@
 				B54EEDDF1B8D347E00E9D662 /* AppDelegate.m in Sources */,
 				B54EEE031B8D38F600E9D662 /* TableViewController.m in Sources */,
 				B54EEDDC1B8D347E00E9D662 /* main.m in Sources */,
+				B53E36BA1B955494008E3E83 /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
