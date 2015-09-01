@@ -30,6 +30,8 @@
         BlogPost *post = [BlogPost blogPostWithTitle:[postDictionary objectForKey:@"title"]];
         post.author = [postDictionary objectForKey:@"author"];
         post.thumbnail = [postDictionary objectForKey:@"thumbnail"];
+        post.date = [postDictionary objectForKey:@"date"];
+        post.url = [NSURL URLWithString:[postDictionary objectForKey:@"url"]];
         
         [self.posts addObject:post];
     }
@@ -64,8 +66,14 @@
     }
     
     cell.textLabel.text = post.title;
-    cell.detailTextLabel.text = post.author;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ - %@", post.author, [post formattedDate]];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BlogPost *post = [self.posts objectAtIndex:indexPath.row];
+    UIApplication *application = [UIApplication sharedApplication];
+    [application openURL:post.url];
 }
 
 /*
