@@ -17,11 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSDictionary *blogPost1 = @{@"title": @"Starting Rspec", @"author": @"Ben"};
-    NSDictionary *blogPost2 = @{@"title": @"Hello Ruby", @"author": @"Lara"};
-    NSDictionary *blogPost3 = @{@"title": @"Deploying Rails", @"author": @"Benedict"};
+    NSURL *blogUrl = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/"];
+    NSData *jsonData = [NSData dataWithContentsOfURL:blogUrl];
+    NSError *dataDictionaryError = nil;
+    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&dataDictionaryError];
     
-    self.posts = @[blogPost1, blogPost2, blogPost3];
+    self.posts = [dataDictionary objectForKey:@"posts"];
 }
 
 - (void)didReceiveMemoryWarning {
