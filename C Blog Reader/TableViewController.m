@@ -23,7 +23,14 @@
     NSError *dataDictionaryError = nil;
     NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&dataDictionaryError];
     
-    self.posts = [dataDictionary objectForKey:@"posts"];
+    self.posts = [NSMutableArray array];
+    NSArray *postsArray = [dataDictionary objectForKey:@"posts"];
+    
+    for (NSDictionary *postDictionary in postsArray) {
+        BlogPost *post = [BlogPost blogPostWithTitle:[postDictionary objectForKey:@"title"]];
+        post.author = [postDictionary objectForKey:@"author"];
+        [self.posts addObject:post];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,10 +53,10 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DisplayCell" forIndexPath:indexPath];
     
-    NSDictionary *post = self.posts[indexPath.row];
+    BlogPost *post = self.posts[indexPath.row];
     
-    cell.textLabel.text = [post valueForKey:@"title"];
-    cell.detailTextLabel.text = [post valueForKey:@"author"];
+    cell.textLabel.text = post.title;
+    cell.detailTextLabel.text = post.author;
     return cell;
 }
 
