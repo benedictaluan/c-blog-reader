@@ -9,11 +9,9 @@
 /* Begin PBXBuildFile section */
 		B54EEDDC1B8D347E00E9D662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B54EEDDB1B8D347E00E9D662 /* main.m */; };
 		B54EEDDF1B8D347E00E9D662 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B54EEDDE1B8D347E00E9D662 /* AppDelegate.m */; };
-		B54EEDE21B8D347E00E9D662 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54EEDE11B8D347E00E9D662 /* ViewController.m */; };
-		B54EEDE51B8D347E00E9D662 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54EEDE31B8D347E00E9D662 /* Main.storyboard */; };
-		B54EEDE71B8D347E00E9D662 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54EEDE61B8D347E00E9D662 /* Images.xcassets */; };
-		B54EEDEA1B8D347E00E9D662 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B54EEDE81B8D347E00E9D662 /* LaunchScreen.xib */; };
 		B54EEDF61B8D347E00E9D662 /* C_Blog_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54EEDF51B8D347E00E9D662 /* C_Blog_ReaderTests.m */; };
+		B54EEE001B8D365200E9D662 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54EEDFF1B8D365200E9D662 /* MainStoryboard.storyboard */; };
+		B54EEE031B8D38F600E9D662 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B54EEE021B8D38F600E9D662 /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +30,12 @@
 		B54EEDDB1B8D347E00E9D662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B54EEDDD1B8D347E00E9D662 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B54EEDDE1B8D347E00E9D662 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		B54EEDE01B8D347E00E9D662 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		B54EEDE11B8D347E00E9D662 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		B54EEDE41B8D347E00E9D662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B54EEDE61B8D347E00E9D662 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		B54EEDE91B8D347E00E9D662 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		B54EEDEF1B8D347E00E9D662 /* C Blog ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "C Blog ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54EEDF41B8D347E00E9D662 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B54EEDF51B8D347E00E9D662 /* C_Blog_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = C_Blog_ReaderTests.m; sourceTree = "<group>"; };
+		B54EEDFF1B8D365200E9D662 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		B54EEE011B8D38F600E9D662 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		B54EEE021B8D38F600E9D662 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,11 +79,9 @@
 			children = (
 				B54EEDDD1B8D347E00E9D662 /* AppDelegate.h */,
 				B54EEDDE1B8D347E00E9D662 /* AppDelegate.m */,
-				B54EEDE01B8D347E00E9D662 /* ViewController.h */,
-				B54EEDE11B8D347E00E9D662 /* ViewController.m */,
-				B54EEDE31B8D347E00E9D662 /* Main.storyboard */,
-				B54EEDE61B8D347E00E9D662 /* Images.xcassets */,
-				B54EEDE81B8D347E00E9D662 /* LaunchScreen.xib */,
+				B54EEE011B8D38F600E9D662 /* TableViewController.h */,
+				B54EEE021B8D38F600E9D662 /* TableViewController.m */,
+				B54EEDFF1B8D365200E9D662 /* MainStoryboard.storyboard */,
 				B54EEDD91B8D347E00E9D662 /* Supporting Files */,
 			);
 			path = "C Blog Reader";
@@ -168,6 +162,7 @@
 				TargetAttributes = {
 					B54EEDD51B8D347E00E9D662 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = FNS9STWV6U;
 					};
 					B54EEDEE1B8D347E00E9D662 = {
 						CreatedOnToolsVersion = 6.4;
@@ -199,9 +194,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54EEDE51B8D347E00E9D662 /* Main.storyboard in Resources */,
-				B54EEDEA1B8D347E00E9D662 /* LaunchScreen.xib in Resources */,
-				B54EEDE71B8D347E00E9D662 /* Images.xcassets in Resources */,
+				B54EEE001B8D365200E9D662 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +212,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B54EEDE21B8D347E00E9D662 /* ViewController.m in Sources */,
 				B54EEDDF1B8D347E00E9D662 /* AppDelegate.m in Sources */,
+				B54EEE031B8D38F600E9D662 /* TableViewController.m in Sources */,
 				B54EEDDC1B8D347E00E9D662 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +235,6 @@
 			targetProxy = B54EEDF01B8D347E00E9D662 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		B54EEDE31B8D347E00E9D662 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B54EEDE41B8D347E00E9D662 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B54EEDE81B8D347E00E9D662 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B54EEDE91B8D347E00E9D662 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B54EEDF71B8D347E00E9D662 /* Debug */ = {
@@ -347,6 +321,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "C Blog Reader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "C Blog Reader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +392,7 @@
 				B54EEDFB1B8D347E00E9D662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B54EEDFC1B8D347E00E9D662 /* Build configuration list for PBXNativeTarget "C Blog ReaderTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +401,7 @@
 				B54EEDFE1B8D347E00E9D662 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
